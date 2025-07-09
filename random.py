@@ -12,7 +12,15 @@ print(birthday)
 print(age)
 print(is_CS_student)
 
+print("\n===Other ways===\n")
+
 print("Name: ", name)
 print("Birthday: ", birthday)
 print("Age: ", age)
 print("Computer Science student? ", is_CS_student)
+
+print("\n===Other ways===\n")
+print("\n===Input Function===\n")
+
+my_name = input("How should I call you?")
+print("Wecome to my program, " + my_name + "! Nice to meet you!")
