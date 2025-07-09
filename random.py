@@ -125,10 +125,40 @@ if attempts == 0:
     print("For your peace of mind, the secret number was " + str(secret_num) + "!")
 
 
-# === DAY 1 NOTES ===
+# === DAY 1 - 10 NOTES ===
 name2 = input("How should I call you? ")
 interest = input("What are you currently interested in?")
 
 print(f"Hi, {name2}! I'm also interested to learn about {interest}!") 
 
-# === DAY 2 NOTES ===
+# Let user input two numbers
+first_num = int(input("Enter First Number: "))
+second_num = int(input("Enter Second Number: "))
+
+addition = first_num + second_num
+subtraction = first_num - second_num
+multiplication = first_num * second_num
+division = first_num / second_num  # Note: result will still be float
+
+print("\nThe Results:")
+print(f"Addition: {first_num} + {second_num} = {addition}")
+print(f"Subtraction: {first_num} - {second_num} = {subtraction}")
+print(f"Multiplication: {first_num} * {second_num} = {multiplication}")
+print(f"Division: {first_num} / {second_num} = {division}")
+
+
+print("\n OTHER \n")
+
+import time
+
+#1: asking user from what number to coundown
+start = int(input("Enter the number to start the countdown from: "))
+
+#2: application using while loop
+print("Starting countdown...")
+while start >0:
+  print(start)
+  time.sleep(1)
+  start -= 1
+
+print("Your time is up! Move!")
