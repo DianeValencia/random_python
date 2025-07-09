@@ -122,5 +122,5 @@ while attempts > 0:
 
 if attempts == 0:
     print("That was a good try! But you can't guess anymore.")
-    print("For your peace of mind, the secret numberr was " + secret_num + "!")
+    print("For your peace of mind, the secret number was " + str(secret_num) + "!")
     
