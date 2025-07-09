@@ -24,3 +24,26 @@ print("\n===Input Function===\n")
 
 my_name = input("How should I call you?")
 print("Wecome to my program, " + my_name + "! Nice to meet you!")
+
+
+print("\n = = = OPERATIONS = = = \n")
+a = 5
+b = 19
+
+print(a + b)    # 13 (addition)
+print(a - b)    # 7 (subtraction)
+print(a * b)    # 30 (multiplication)
+print(a / b)    # 3.333... (division, returns float)
+print(a // b)   # 3 (floor division, drops decimal part)
+print(b % a)    # 3 (modulo, remainder when b is divided by a)
+print(a ** b)   # 1000 (exponentiation, 10 to the power of 3)
+
+print("\n OTHER \n")
+age1 = int(input("Enter your age: "))
+
+if age1 >= 18:
+  print("Congrats! You're old with the weight of life's responsibilities now!")
+elif  age1 >= 13:
+  print("Enjoy your remaining happy days")
+else:
+  print("What are you doing here?")
