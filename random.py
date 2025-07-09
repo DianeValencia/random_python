@@ -162,3 +162,120 @@ while start >0:
   start -= 1
 
 print("Your time is up! Move!")
+
+print()
+print()
+
+import random
+
+print("\n QUIZ \n")
+
+
+# This is Math quiz game (NO CALCULUS!)
+
+# Step 1. define math question function
+
+def generate_question():
+    number1 = random.randint(1, 10)
+    number2 = random.randint(1, 10)
+    operator = random.choice(['+', '-', '*'])
+
+    if operator == '+':
+        answer = number1 + number2
+    elif operator == '-':
+        answer = number1 - number2
+    else:
+        answer = number1 * number2
+
+    return f"{number1} {operator} {number2}", answer
+
+def math_quiz():
+    score = 0
+    rounds = 5
+
+    print("Let's solve some math problems!")
+
+    for i in range(rounds):
+        question, correct_answer = generate_question()
+        print(f"\nQuestion {i + 1}: {question}")
+        user_mathanswer = int(input("Your answer: "))
+
+        if user_mathanswer == correct_answer:
+            print("You're right!")
+            score += 1
+        else:
+            print("Nice try! The correct answer was", correct_answer)
+
+    print("Quiz is finished!")
+    print(f"You final score is: {score}/{rounds}")
+
+    if score == rounds:
+        print("You did well! You got everything right!")
+    elif score >= 3:
+        print("You almost got everything right!")
+    else:
+        print("Keep learning! You will get better too!")
+
+math_quiz()
+
+
+print()
+print()
+print()
+# Shopping List Program with View, Add, Remove, Clear
+
+shopping_list = []
+
+def view_list():
+    if shopping_list:
+        print("\nYour Shopping List:")
+        for i, item in enumerate(shopping_list, start=1):
+            print(f"{i}. {item}")
+    else:
+        print("\nYour shopping list is empty.")
+
+def add_item():
+    item = input("Enter item to add: ")
+    shopping_list.append(item)
+    print(f"'{item}' has been added to your shopping list.")
+
+def remove_item():
+    view_list()
+    item = input("Enter item to remove: ")
+    if item in shopping_list:
+        shopping_list.remove(item)
+        print(f"'{item}' has been removed from your shopping list.")
+    else:
+        print(f"'{item}' not found in your shopping list.")
+
+def clear_list():
+    shopping_list.clear()
+    print("Your shopping list has been cleared.")
+
+def main():
+    while True:
+        print("\n=== Shopping List Menu ===")
+        print("1. View List")
+        print("2. Add Item")
+        print("3. Remove Item")
+        print("4. Clear List")
+        print("5. Exit")
+
+        choice = input("Choose an option (1-5): ")
+
+        if choice == '1':
+            view_list()
+        elif choice == '2':
+            add_item()
+        elif choice == '3':
+            remove_item()
+        elif choice == '4':
+            clear_list()
+        elif choice == '5':
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please select 1-5.")
+
+main()
+
