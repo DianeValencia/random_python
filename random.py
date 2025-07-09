@@ -47,3 +47,18 @@ elif  age1 >= 13:
   print("Enjoy your remaining happy days")
 else:
   print("What are you doing here?")
+
+
+print()
+print()
+print()
+
+print("\n LOOP \n")
+
+count = 0
+while count <5:
+  print("Count is: ", count)
+  count += 1
+
+      
+
