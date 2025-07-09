@@ -123,4 +123,12 @@ while attempts > 0:
 if attempts == 0:
     print("That was a good try! But you can't guess anymore.")
     print("For your peace of mind, the secret number was " + str(secret_num) + "!")
-    
+
+
+# === DAY 1 NOTES ===
+name2 = input("How should I call you? ")
+interest = input("What are you currently interested in?")
+
+print(f"Hi, {name2}! I'm also interested to learn about {interest}!") 
+
+# === DAY 2 NOTES ===
